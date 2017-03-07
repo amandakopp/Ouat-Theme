@@ -1,0 +1,314 @@
+/*
+	Theme Name: OUAT	
+	Description: QUAT Media WordPress Theme
+*/
+
+body {
+	color: #000000;
+}
+
+h1 {
+	font-size: 24px;
+	font-weight: 400;
+}
+
+h2 {
+	font-weight: 300;
+	font-size: 18px;
+}
+
+h3 {
+	font-weight:500;
+	line-height: 1.4em;
+	font-size: 36px;
+}
+
+p {
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+a {
+    color: inherit;
+    
+}
+
+a:hover {
+	animation: anim1 5s ease infinite alternate;
+	text-decoration: none;
+}
+
+.line {
+	border-bottom: 1px solid #ffffff;
+	padding: 20px 0 10px;
+}
+
+.line-gray {
+	border-top: 2px solid #c9c8c8;
+	padding: 20px 0 10px;
+	margin-right: 10px;
+}
+
+.line-colour {
+	height: 2px;
+	background: linear-gradient(to right, #3061a3, #107cae, #70497b, #d12734);
+	margin: 20px 0 10px;
+	margin-right: 10px;
+}
+
+.line-dash {
+	border-top: 1px dotted #c9c8c8;
+	margin-right: 10px;
+	margin-left: 2px;
+}
+
+
+.main.col-sm-4  {
+	padding-left: 0;
+}
+
+.pad {
+	padding-bottom: 20px;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.film-title {
+	padding-top: 10px;
+    padding-bottom: 20px;
+	
+}
+
+.navbar {
+	background: #ffffff;
+	padding: 20px;
+	border-bottom: 0 solid #c9c8c8;
+	
+}
+
+.navbar-nav {
+	margin-right: 30px;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #000000;
+	font-size: 1.1em;
+	
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	/* border-bottom: 3px solid #000000; */
+}
+
+@keyframes anim1 {
+	0% {
+		color:#3061a3; 
+
+	}
+	20% { 
+		color:#107bae;
+	}
+	40% {
+		color:#6c4b7f;
+	}
+	60% {
+		color:#8d3a5e;
+	}
+	80% {
+		color:#d12332;
+	}
+	100% {
+		color:#3061a3;
+	}
+}
+
+.navbar-brand {
+	padding: 0;
+	padding-left: 30px;
+}
+
+.bottom-footer {
+	border-top: 1px solid #fff; 
+	font-weight: 100;
+	padding: 20px;
+}
+
+.page {
+	min-height: 900px;
+}
+
+.single {
+	min-height: 600px;
+}
+
+.trailer {
+	padding-bottom: 60px;
+	padding-right: 40px;
+	padding-left: 15px;
+}
+
+
+ul {
+	list-style: none;
+    padding-left: 0;
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 54.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+#footer img {
+	margin-top: 20px;
+	max-height: 40px;
+}
+
+.footer {
+	background: #000000;
+	color: #ffffff;
+}
+
+.footer-logos {
+	padding: 40px;
+}
+
+.main .page-header {
+  margin-top: 0;
+}
+
+.new-titles {
+	padding-bottom: 50px;
+}
+
+.image-news {
+	width: 200px;
+	height: 200px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.image {
+	width: 270px;
+	height: 400px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	border-top: 3px solid #c9c8c8;
+}
+
+.single .image {
+	border-top:0;
+}
+
+.image:hover {
+	opacity: 0.8;
+}
+
+/* Hide for mobile, show later */
+.sidebar {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .image {
+  	width: 230px;
+  	height: 340px;
+  }
+  
+  .image-news {
+	width: 216px;
+	height: 240px;
+}
+  
+}
+
+
+@media (min-width: 1000px) {
+  .sidebar {
+    
+    display: block;
+    overflow-x: hidden;
+    overflow-y: hidden; /* Scrollable contents if viewport is shorter than content. */
+
+  }
+  
+}
+
+@media (max-width: 768px) {
+  
+  h3 {
+  	font-size: 21px;
+  	
+  }
+  .page {
+	min-height: 600px;
+}
+
+.image {
+	width: 322px;
+	height: 476px;
+}
+
+  .image-news {
+	width: 260px;
+	height: 288px;
+}
+
+ .btn.btn-default {
+	margin-bottom: 5px; 
+  }
+
+}
+
+@media (max-width: 480px) {
+  
+  h1, h2, h3, p {
+	  text-align: center;
+  }
+  
+  h3 {
+	  font-size: 16px;
+  }
+  
+  .image {
+	  margin-left: 10px;
+  }
+  
+  .image-news {
+	  margin-left: 30px;
+  }
+  
+  .single.image {
+	  margin-left: 0;
+  }
+  
+  li {
+	  text-align: center;
+	  padding: 5px;
+  }
+  
+  .btn.btn-default {
+	display: block; 
+	width: 100%;  
+  }
+  
+
+}
